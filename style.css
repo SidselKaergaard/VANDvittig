@@ -16,6 +16,10 @@ body{
     font-family: 'Noto Sans TC', sans-serif;
 }
 
+.bold{
+    font-weight: bold;
+}
+
 .overskrift{
     text-align: center;
     padding-bottom: 40px;
@@ -31,6 +35,7 @@ body{
     font-size: 18px;
     border: none;
     outline: none;
+    background: none;
     cursor: pointer;
   }
   
@@ -38,26 +43,40 @@ body{
     transform: scale(1.5);
   }
 
+
 /**---------------------------------------------- FORSIDE ---------------------------------------------------------------**/
+
 .forside{                         
     z-index: 0;
 }
 .bag{  
     display: flex;   
     justify-content:center;                         
-    height:900px;
+    height:1170px;
 }
 .om{                               
     background-color:#c7dee2;
     border-radius: 4px;
-    height:800px;
-    top: -50px;
+    height:1115px;
+    top: 40px;
     text-align: center;
     padding-top:40px;
     z-index: 1;
 }
+.logolink:hover{
+    border: none;
+}
 
-
+.intro{
+    font-weight: bolder;
+    font-size: 20px;
+    padding-bottom: 23px;
+}
+.introtekst{
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px; 
+}
 
 
 /** NAVIGATION  **/
@@ -70,22 +89,19 @@ body{
     font-weight: lighter;
     padding-left: 25px;
 }
-
-a:hover{
+ a:hover{
     border-bottom: 1px solid #F7AA43;
 }
-
 .dropdown-item:hover{
     border: none;
     background-color: white;
     color: #F7AA43;
 }
-
 .dropdown-item{
     font-size: 22px;
     font-weight: lighter;
+    width: 60px;
 } 
-
 .navbar{
     float: right;
     margin-top: 40px;
@@ -93,27 +109,23 @@ a:hover{
 .button{
     align-content: flex-end;
 }
-
 .dropdown-menu {
     color: #3d3d3d;
     background-color:none;
     border: white;
     border-radius: 4px;
 }
-
 .dropdown-toggle::after {
     content: none;
 }
-
 .dropdown:hover .dropdown-menu {
     display: block;
   }
-
 .punkt{
     border-bottom: 1px solid #F7AA43;
 }
 
-/**---------------------------------------------- OM SIDE  ---------------------------------------- **/
+/**---------------------------------------------- KROP SIDE  ---------------------------------------- **/
 
 .tekst{
     text-align: center;
@@ -124,15 +136,14 @@ a:hover{
 .tekst1{
     text-align: center;
     padding-top:15px;
+    padding-bottom: 20px;
     line-height: 1.8;
 }
 .box{                                 
     display: flex;
     justify-content:center;
 }
-.rum{
-    height: 50px;
-}
+
 .border1{
     margin-top:30px;
     background-color:#F7AA43;
@@ -151,6 +162,9 @@ a:hover{
 .indhold{
     text-align: start;
     padding:20px;
+}
+.krop{
+    margin-bottom: 50px;
 }
 
 
@@ -184,8 +198,7 @@ a:hover{
 .knogler{
     width: 200px;
     height: 200px;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin-top: 80px;
 }
 .lever{
     width: 220px;
@@ -208,7 +221,7 @@ a:hover{
  border-radius: 4px;
  height: 270px;
  margin-bottom: 50px;
- padding-top:10px;
+ padding-top:30px;
 }
 
 #svar{
@@ -217,21 +230,20 @@ a:hover{
     font-size: 22px;
 }
 
-/**------------------------------------------------  LÆRINGS SIDE -----------------------------------------------------**/
+/**------------------------------------------------  KOST SIDE -----------------------------------------------------**/
 
 
 .grønt{
     border-top: 2px solid #F7AA43;
     padding: 30px;
-    margin: 50px;
+    
 }
 
 .grønt1{
    background-color: #c7dee2;
    border-radius: 4px;
-   margin-top: 50px;
    padding: 30px;
-   margin-bottom: 90px;
+   margin-top: 50px;
 }
 
 .overskrift2{
@@ -248,7 +260,7 @@ a:hover{
 }
 
 .kost{
-    margin-bottom: 30px;
+    
     margin-top: 30px;
 }
 
@@ -257,35 +269,78 @@ a:hover{
     background-color: #F7AA43;
     text-align: center;
     border-radius: 4px;
-    height: 225px;
-    margin-bottom: 50px;
-    padding-top:10px;
+    height: 255px;
+    margin-bottom: 90px;
+    padding-top:30px;
+    margin-top: 50px;
 }
 
 .quizz{
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-    margin-top: 30px;
-}
-.læring{
-    display: flex;
-    align-content: center;
-    margin-left: 18%;
 }
 
-
+#b1, #b2, #b3{
+    font-size: 19px;
+}
+#question{
+    font-size: 20px;
+}
+#svaret, #correctQuiz{
+    font-size: 18px;
+}
 /**--------------------------------------------- INSPIRATION ----------------------------------------------------**/
+
 .grød{
-    background-color: aqua;
-    margin-bottom: 100px;
+    background-color: #c7dee2;
+    border-radius: 4px;
     margin-top: 50px;
-    padding: 20px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.inspitekst{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.inspibillede{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.inspibillede:hover{
+    transform: scale(1.2);
+}
+.driklink{
+    border-bottom: #c7dee2 !important;
 }
 
-
-
-
+.agurkmynte{
+    height: 450px; 
+    border-radius: 4px;
+}
+.citroningefarmynte{
+    height: 450px;
+    border-radius: 4px;
+}
+.jordbarblabar{
+    height: 450px;
+    border-radius: 4px;
+}
+.jordbarkiwi{
+    height: 450px;
+    border-radius: 4px;
+}
+.vandmelonmynte{
+    height: 450px;
+    border-radius: 4px;
+}
+.appelsinmyntelime{
+    height: 450px;
+    border-radius: 4px;
+}
 
 
 /** DEL VIDEN **/
@@ -297,6 +352,7 @@ a:hover{
     padding-top: 30px;
     
 }
+
 .hastag{
     text-decoration: none;
     color:#3d3d3d;
@@ -325,6 +381,58 @@ form{
     transform: scale(1.5);
 }
 
+/** Drinks sider**/
+.videoindhold{
+    margin-bottom: 50px;
+    margin-top:30px; 
+    padding-right: 80px;
+}
+.videolist{
+    margin-bottom: 50px;
+    margin-top:30px;
+    padding-left: 80px;
+}
+.videobillede{
+    margin-bottom: 50px;
+    margin-top:30px;
+}
+.videoborder{
+    border-radius: 4px;
+}
+
+video{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+}
+
+.bordertekst{
+    background-color: #c7dee2;
+    border-radius: 4px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.breadcrumb{
+    background-color: white;
+    margin-top:10px;
+    margin-bottom: -30px;
+}
+
+.breadcrumb a{
+    color:#3d3d3d;
+    text-decoration: none;
+}
+
+.ingredienser{
+    list-style-image: url('img/drop.png');
+}
+.brug{
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
 
 /**--------------------------------------------- FOOTER ----------------------------------------------------**/
 .footer{
@@ -343,14 +451,15 @@ form{
 
 
 /** MINI MENU **/
-.mini{
-    color:gray;
+.minimenu{
+    color: #3d3d3d;
+    font-size: 17px;
+    padding-bottom: 10px;
 }
-.btn-secondary{
-    background-color:#EDEFEF;
-    border-color: #EDEFEF;
-    color:#3d3d3d;
-    text-align: start;
+.minimenu:hover{
+    color: #3d3d3d;
+    text-decoration: underline #F7AA43;
+    border:none;
 }
 
 /** SOCIALE MEDIER **/
@@ -363,7 +472,9 @@ form{
     margin-left: 10px;
     width: 50px; 
 }
-
+.sociallink{
+    border-bottom: white !important;
+}
 
 /** KONTAKT FORMULAR**/
 form{
@@ -375,6 +486,7 @@ form{
 
 .btn-light{
     background-color: #c7dee2;
+    border: #c7dee2;
 }
 
 
